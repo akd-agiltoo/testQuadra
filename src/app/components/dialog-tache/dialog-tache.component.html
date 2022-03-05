@@ -1,0 +1,35 @@
+<!-- dialog-box.component.html -->
+<h2 mat-dialog-title><strong>{{action}} d'une Tache</strong></h2>
+<div mat-dialog-content *ngIf="action != 'Delete'">
+
+    <form class="example-container" [formGroup]="formTache"  novalidate>
+    
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Name" formControlName="todo_label">
+            <mat-error *ngIf="errorHandling('todo_label', 'required')">
+                le todo_label est obligatoire
+             </mat-error>
+        </mat-form-field>
+
+        
+        <mat-form-field>
+            <input hidden=true matInput> 
+            <mat-checkbox matInput formControlName="todo_is_done">Terminer</mat-checkbox>
+          </mat-form-field>
+
+      
+
+    </form>
+      
+</div>
+
+<div mat-dialog-content *ngIf="action == 'Delete'">
+    <h5>
+      Etes vous sure de vouloir supprimer la tache: <b>{{local_data.todo_label}}</b> avec l'id <b>{{local_data.todo_id}}?</b>
+    </h5>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="doAction()" [disabled]="action != 'Delete' && !formTache.valid">{{action}}</button>
+  <button mat-button (click)="closeDialog()" mat-flat-button color="warn">Cancel</button>
+</div>

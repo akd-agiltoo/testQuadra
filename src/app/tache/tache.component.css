@@ -1,0 +1,37 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 90%;
+  }
+  
+  td, th {
+    width: 25%;
+  }
+  
+
+
+ 
+  
+  .mat-row .mat-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .mat-row:hover .mat-cell {
+    border-color: currentColor;
+  }
+
+  .demo-row-is-clicked {
+    font-weight: bold;
+  }
+  
+
+  .mat-column-actions {
+    width: 152px!important;
+    border-right: 1px solid currentColor;
+  }
+  
