@@ -1,4 +1,4 @@
-# Angular 13 Login and Registration with JWT and Web API example
+# Angular 13 Login with JWT and Web API example
 
 Build Angular 13 Token based Authentication & Authorization Application with Web Api and JWT (including HttpInterceptor, Router & Form Validation).
 - JWT Authentication Flow for User Registration (Signup) & User Login
