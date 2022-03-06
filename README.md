@@ -13,7 +13,7 @@ Build Angular 13 Token based Authentication & Authorization Application with Web
 
 # Quickstart
 
-Clone the Project `git clone https://github.com/akd-agiltoo/test-quadra-angular.git`
+Clone the Project `https://github.com/abdoudiagne/testQuadra.git`
 
 Start `npm install`
 
