@@ -2,24 +2,24 @@
   <nav class="navbar navbar-expand navbar-dark bg-dark">
     <a href="#" class="navbar-brand">QUADRA</a>
     <ul class="navbar-nav mr-auto" routerLinkActive="active">
-     
+
       <li class="nav-item">
-        <a href="/tache" class="nav-link" *ngIf="isLoggedIn" routerLink="tache">Liste Taches</a>
+        <a href="/tache" class="nav-link" *ngIf="getIsLoggedIn()" routerLink="tache">Liste Taches</a>
       </li>
-     
+
     </ul>
 
-    <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
-   
+    <ul class="navbar-nav ml-auto" *ngIf="!getIsLoggedIn()">
+
       <li class="nav-item">
         <a href="/login" class="nav-link" routerLink="login">Connexion</a>
       </li>
     </ul>
 
-    <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+    <ul class="navbar-nav ml-auto" *ngIf="getIsLoggedIn()">
       <li class="nav-item">
-      
-       <a href class="nav-link" > Bonjour {{ name }}</a>
+
+        <a href class="nav-link"> Bonjour {{ getName() }}</a>
       </li>
       <li class="nav-item">
         <a href class="nav-link" (click)="logout()">Deconnexion</a>

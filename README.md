@@ -9,7 +9,15 @@ Build Angular 13 Token based Authentication & Authorization Application with Web
 - How to add a dynamic Navigation Bar to Angular App
 - Working with Browser Session Storage
 
-## Flow for  User Login
+# Quickstart
+
+Clone the Project `git clone https://github.com/akd-agiltoo/test-quadra-angular.git`
+
+Start `npm install`
+
+Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/`.
+
+# Flow for  User Login
 For JWT – Token based Authentication with Web API, we’re gonna call endpoints:
 - POST {{BASE_URL}}{{BASE_API}}{{BASE_AUTH}}+`/login` for User Login
 
@@ -19,10 +27,6 @@ BASE_AUTH: /auth
 BASE_CRUD_TODO: /todo
 user-id: 1
 
-
-Start `npm install`
-
-Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/`.
 
 
 
